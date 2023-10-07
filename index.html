@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <main class="main-container show" id="main-container">
+    <section class="main-section">
+      <h1 class="headline">Stay updated!</h1>
+      <p class="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="paragraph"><img src="assets/images/icon-list.svg"> Product discovery and building what matters</p>
+      <p class="paragraph"><img src="assets/images/icon-list.svg"> Measuring to ensure updates are a success</p>
+      <p class="paragraph"><img src="assets/images/icon-list.svg"> And much more!</p>
+      <label for="email" class="label">Email address</label>
+      <input type="email" name="email" placeholder="email@company.com" class="email" id="email">
+      <strong class="error hide" id="error">Valid email required</strong>
+      <input type="submit" class="btn" value="Subscribe to monthly newsletter" onclick="emailValidation()">
+
+    </section>
+    <picture class="desktop img-container">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="ilust" width="100%" height="100%">
+    </picture>
+
+    <picture class="mobile img-container">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="ilust" width="100%" height="100%">
+    </picture>
+
+  </main>
+
+  <main class="success hide" id="success">
+    <img src="assets/images/icon-success.svg" class="img" width="50px" height="50px">
+    <h1 class="headline">Thanks for subscribing!</h1>
+    <p class="paragraph">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.  <br>
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button class="btn btn-success" onclick="dismiss()">Dismiss message</button>
+  </main>
+
+  
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><strong>Frontend Mentor</strong></a>. 
+    Coded by <a href="https://gaston-gomez1997.netlify.app/" target="_blank"><strong>Gastón Gómez</strong></a>.
+  </footer>
+  <script src="./app.js"></script>
+  
+</body>
+</html>
